@@ -12,5 +12,8 @@ This priority queue is implemented using a min heap which is itself implemented 
 - getPriority(int element) - return the priority for an existing element in the queue
 - isPresent(int element) - returns true if an element exists in the queue and false otherwise 
 
+# How to use
+Update the code in the driver class to use the priority queue. First start by initializing a new priority queue and adding Pair elements using the push method. The current driver class then prints out the min heap and the map to ensure correctness. It then changes the priority of two of the elements using the changePriority method and prints out the final state of the min heap and map.
+
 # Credits
 My professor, America Chambers, wrote the Pair class and gave it to me as starter code for this assignment. This was also a pair programming assignment in which I worked with my classmate, Gennie Cheatham. 
