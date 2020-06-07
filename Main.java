@@ -9,11 +9,8 @@ public class Main {
         q.printHeap();
         q.printMap();
         q.changePriority(120,8);
-        q.printHeap();
-        q.printMap();
         q.changePriority(200,3);
         q.printHeap();
         q.printMap();
-
     }
 }
