@@ -58,12 +58,5 @@ public class Main {
             throw new InputMismatchException();
         }
 
-//        q.push(100,10);
-//        q.push(50,3);
-//        q.push(70, 15);
-//        q.push(4,8);
-//        q.changePriority(120,8);
-//        q.changePriority(200,3);
-
     }
 }
