@@ -1,5 +1,5 @@
 # Java Priority Queue 
-This repository holds an implementation of a priority queue structure in Java. This was an implementation I did for my undergraduate algorithms class in which I was tasked with creating a min priority queue that stores pairs (p,e) which consist of a priority and an element. The element was to be stored in the priority queue with the associated priority. All priorities and elements were assumed to be integers for simplicity. 
+This repository holds an implementation of a priority queue structure in Java. This was an implementation I did for my undergraduate algorithms class in which I was tasked with creating a min priority queue that stores pairs (p,e) which consist of a priority and an element. The element was to be stored in the priority queue with the associated priority. All priorities and elements were assumed to be integers for simplicity. This project also includes a text-based interface that allows the user to interact with the priority queue.
 
 # Features 
 This priority queue is implemented using a min heap which is itself implemented using an array. To increase efficiency, I am keeping track of the index into the array for every element using a map data structure. The input to the map would be the elment and the output would be the index of that element in the heap array. The priority queue supports the following methods:
@@ -11,6 +11,14 @@ This priority queue is implemented using a min heap which is itself implemented 
 - changePriority(int element, int newPriority) - change the priority of the existing element in the queue 
 - getPriority(int element) - return the priority for an existing element in the queue
 - isPresent(int element) - returns true if an element exists in the queue and false otherwise 
+
+The text-based interface starts with an empty priority queue and allows the user to interact with the queue through a menu with the following five options:
+
+1. **Option 1**: Insert a new element into the priority queue. This option asks the user to enter the value and priority of the new element and adds it into the queue.
+2. **Option 2**: Remove the highest priority element. This option will remove the element that had the highest priority and print it's element and priority values to the screen.
+3. **Option 3**: Change the priority of an element already in the priority queue. This option asks the user for the element they wish to change and it's new priority value, and updates the priority queue appropriately. 
+5. **Option 4**: Print out the priority queue. This option will print out the value and priority of each element and the corresponding map of each elements position in the queue. 
+4. **Option 5**: Quit. This option exits the program.
 
 # Example
 <pre>
