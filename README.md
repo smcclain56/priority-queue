@@ -2,15 +2,16 @@
 This repository holds an implementation of a priority queue structure in Java. This was an implementation I did for my undergraduate algorithms class in which I was tasked with creating a minimum priority queue that stores pairs (p,e) which consist of a priority value and an element value, both are assumed to be integers for simplicity. The element is stored in the priority queue with the associated priority. This project also includes a text-based interface that allows the user to interact with the priority queue and conduct actions, such as inserting a new element, removing the highest priority element, changing that priority of an element in the priority queue, printing out the priority queue or exiting the program.
 
 # Features 
-This priority queue is implemented using a min heap which is itself implemented using an array. To increase efficiency, I am keeping track of the index into the array for every element using a map data structure. The input to the map would be the elment and the output would be the index of that element in the heap array. The priority queue supports the following methods:
+This priority queue is implemented using a min heap which is itself implemented using an array. To increase efficiency, I am keeping track of the index into the array for every element using a map data structure. The input to the map would be the element and the output would be the index of that element in the heap array. The priority queue supports the following methods:
 - push - add an element to the priority queue
 - pop - remove the highest priority element from the queue
 - topElement - return (but don't remove) the element with the highest priority
 - topPriority - return (but don't remove) the highest priority value
-- clear, isEmpty
 - changePriority(int element, int newPriority) - change the priority of the existing element in the queue 
-- getPriority(int element) - return the priority for an existing element in the queue
+- getPriority(int element) - returns the priority for an existing element in the queue
 - isPresent(int element) - returns true if an element exists in the queue and false otherwise 
+- isEmpty() - returns true if the queue is empty
+- clear() - removes all elements from the queue
 
 The text-based interface starts with an empty priority queue and allows the user to interact with the queue through a menu with the following five options:
 
